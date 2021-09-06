@@ -1,0 +1,76 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+section {
+	border: 2px solid black;
+	margin: auto;
+	width: 95%;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+section h2 {
+	width: 100%;
+	text-align: center;
+}
+
+div {
+	border: 2px solid black;
+}
+
+.project-container {
+	width: 100%;
+	margin: 0 auto;
+}
+
+.project {
+	width: 90%;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: row;
+	align-items: top;
+	justify-content: space-around;
+}
+
+.portfolio-preview {
+	height: 300px;
+	width: 300px;
+	object-fit: cover;
+	transform: scale(0.8);
+	transition: transform 0.5s;
+}
+
+.portfolio-preview:hover {
+	transform: scale(1.0);
+	transition: transform 1s;
+	cursor: pointer;
+}
+
+
+.link-button {
+	width: 100px;
+	height: 25px;
+	background-color: white;
+	border: 2px solid blue;
+	border-radius: 5px;
+}
+
+.link-button a {
+	text-decoration: none
+}
+
+.link-button a:visited {
+	color: black;
+}
+
+
+@media (hover: hover) {
+	.link-button:hover {
+		background-color: blue;
+		transition: background-color 0.2s ease-in;
+	}
+
+}
