@@ -11,8 +11,8 @@ I'm currently working on 3 projects:
 1. Teaching Dialogue Writing App (*project to learn ReactJS*)
 2. Covid Taichung Information Website (*nearly complete, currently implementing map update*)
 3. Canary Bank Student Rewards Bank (*On hold until Teaching Dialogue Writing App completed*)
-- Project originally written using JS and PHP
-- Will be redone using ReactJS
+  1. Project originally written using JS and PHP
+  2. Will be redone using ReactJS
 
 ## Past Projects
 
