@@ -16,7 +16,7 @@ I'm currently working on 3 projects:
 
 I've completed 2 projects from start to finish:
 
-1. Taiwan Tax Calculator
-2. Teacher's Whiteboard Lesson Planner
+1. Taiwan Tax Calculator (*currently doing a refactor*)
+2. Teacher's Whiteboard Lesson Planner (*currently doing a refactor*)
 
 
