@@ -2,6 +2,76 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	color: aliceblue;
+}
+
+body {
+	background-color: rgb(20,20,20);
+}
+
+
+
+.main {
+	background-color: royalblue;
+	margin: 5em 1em;
+	padding: 1em;
+	border-radius: 10px;
+	height: 100vw;
+}
+
+button {
+	color: black;
+}
+
+header {
+	background-color: royalblue;
+	color: aliceblue;
+}
+
+nav {
+	display: flex;
+	justify-content: right;
+}
+
+nav li {
+	text-decoration: none;
+	list-style: none;
+	width: 75px;
+	text-align: center;
+}
+
+.project-profile {
+	padding: 1em;
+	border-radius: 5px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.profile-preview {
+	height: 300px;
+	width: 100%;
+	border-radius: 25px;
+	object-fit: cover;
+	transform: scale(0.8);
+	transition: transform 0.5s;
+}
+
+@media (hover: hover) {
+	.profile-preview:hover {
+		transform: scale(1.0);
+		transition: transform 1s;
+		cursor: pointer;
+	}
+}
+
+/*.project-profile p {
+	width: 100%;
+	text-align: center;
+}
+
+main h1 {
+	background-color: royalblue;
+	color: aliceblue;
 }
 
 section {
@@ -17,9 +87,7 @@ section h2 {
 	text-align: center;
 }
 
-div {
-	border: 2px solid black;
-}
+
 
 .project-container {
 	width: 100%;
@@ -35,19 +103,7 @@ div {
 	justify-content: space-around;
 }
 
-.portfolio-preview {
-	height: 300px;
-	width: 300px;
-	object-fit: cover;
-	transform: scale(0.8);
-	transition: transform 0.5s;
-}
 
-.portfolio-preview:hover {
-	transform: scale(1.0);
-	transition: transform 1s;
-	cursor: pointer;
-}
 
 
 .link-button {
@@ -73,4 +129,4 @@ div {
 		transition: background-color 0.2s ease-in;
 	}
 
-}
+}*/

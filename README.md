@@ -10,9 +10,7 @@ I'm currently working on 3 projects:
 
 1. Teaching Dialogue Writing App (*project to learn ReactJS*)
 2. Covid Taichung Information Website (*nearly complete, currently implementing map update*)
-3. Canary Bank Student Rewards Bank (*On hold until Teaching Dialogue Writing App completed*)
-    1. Project originally written using JS and PHP
-    2. Will be redone using ReactJS
+
 
 ## Past Projects
 
@@ -21,4 +19,8 @@ I've completed 2 projects from start to finish:
 1. Taiwan Tax Calculator (*currently doing a refactor*)
 2. Teacher's Whiteboard Lesson Planner (*currently doing a refactor*)
 
+## Future Projects
 
+1. Canary Bank Student Rewards Bank (*On hold until Teaching Dialogue Writing App completed*)
+    1. Project originally written using JS and PHP
+    2. Will be redone using ReactJS
