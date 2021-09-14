@@ -2,7 +2,8 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	color: aliceblue;
+	/*color: aliceblue;*/
+	overflow-x: hidden;
 }
 
 body {
@@ -41,28 +42,287 @@ nav li {
 }
 
 .project-profile {
+	width: 100%;
 	padding: 1em;
-	border-radius: 5px;
-	display: flex;
-	flex-wrap: wrap;
+	margin-bottom: 4em;
+	background-color: white;
 }
 
-.profile-preview {
-	height: 300px;
-	width: 100%;
-	border-radius: 25px;
-	object-fit: cover;
-	transform: scale(0.8);
-	transition: transform 0.5s;
+.project-profile h2, p {
+	margin-bottom: 1em;
+}
+
+.project-profile button {
+	padding: 0.5em;
+	width: 30%;
+	background-color:  white;
+	border-radius: 5px;
+	transition: font-size 1s;
 }
 
 @media (hover: hover) {
-	.profile-preview:hover {
+
+	.project-profile button:hover {
+		background-color: royalblue;
+		border: 2px solid royalblue;
+		color: white;
+		font-size: 16.5px;
+		transition: font-size 1s;
+	}
+}
+.mobile-profile-on {
+	display: block;
+}
+
+.mobile-profile-off {
+	display: none;
+}
+
+.profile-preview {
+	width: 100%;
+	border-radius: 5px;
+}	
+
+
+
+@media (min-width: 700px) {
+
+	.mobile-profile-on {
+		display: none;
+	}
+
+	.mobile-profile-off {
+		display: block;
+	}
+
+	.project-profile {
+		width: 100%;
+		padding: 1em;
+		margin-bottom: 4em;
+		background-color: white;
+	}
+
+	.left {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: right;
+		border-radius: 25px;
+		transform: translateX(-40%);
+		transition: 0.5s ease-out;
+	}
+
+	.right {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: left;
+		border-radius: 25px;
+		transform: translateX(40%);
+		transition: 0.5s ease-out;
+	}
+
+	.left:hover {
+		transform: translateX(-10%);
+		transition: 1s ease-out;
+	}
+
+	.right:hover {
+		transform: translateX(10%);
+		transition: 1s ease-out;
+	}
+
+	.left div {
+		margin-right: 1em;
+	}
+
+	.right div {
+		margin-left: 1em;
+	}
+
+	.profile-preview {
+		height: 300px;
+		width: 100%;
+		border: 2px solid black;
+		border-radius: 25px;
+		object-fit: cover;
+		object-position: 0px;
 		transform: scale(1.0);
+		transition: transform 0.5s;
+	}
+
+
+	.profile-preview {
+		width: 100%;
+	}
+
+	.project-profile div {
+		width: 30%;
+	}
+
+}
+
+@media (min-width: 800px) {
+
+	.mobile-profile-on {
+		display: none;
+	}
+
+	.mobile-profile-off {
+		display: block;
+	}
+
+	.project-profile {
+		width: 100%;
+		padding: 1em;
+		margin-bottom: 4em;
+		background-color: white;
+	}
+
+	.left {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: right;
+		border-radius: 25px;
+		transform: translateX(-40%);
+		transition: 0.5s ease-out;
+	}
+
+	.right {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: left;
+		border-radius: 25px;
+		transform: translateX(40%);
+		transition: 0.5s ease-out;
+	}
+
+	.left:hover {
+		transform: translateX(-15%);
+		transition: 1s ease-out;
+	}
+
+	.right:hover {
+		transform: translateX(15%);
+		transition: 1s ease-out;
+	}
+
+	.left div {
+		margin-right: 1em;
+	}
+
+	.right div {
+		margin-left: 1em;
+	}
+
+	.profile-preview {
+		height: 300px;
+		width: 100%;
+		border: 2px solid black;
+		border-radius: 25px;
+		object-fit: cover;
+		object-position: 0px;
+		transform: scale(1.0);
+		transition: transform 0.5s;
+	}
+
+
+	.profile-preview {
+		width: 100%;
+	}
+
+	.project-profile div {
+		width: 30%;
+	}
+
+	.project-profile div {
+		width: 30%;
+	}
+}
+
+@media (min-width: 1000px) {
+
+	.mobile-profile-on {
+		display: none;
+	}
+
+	.mobile-profile-off {
+		display: block;
+	}
+
+	.project-profile {
+		width: 100%;
+		padding: 1em;
+		margin-bottom: 4em;
+		background-color: white;
+	}
+
+	.left {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: right;
+		border-radius: 25px;
+		transform: translateX(-50%);
+		transition: 0.5s ease-out;
+	}
+
+	.right {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: left;
+		border-radius: 25px;
+		transform: translateX(50%);
+		transition: 0.5s ease-out;
+	}
+
+	.left:hover {
+		transform: translateX(-30%);
+		transition: 1s ease-out;
+	}
+
+	.right:hover {
+		transform: translateX(30%);
+		transition: 1s ease-out;
+	}
+
+	.left div {
+		margin-right: 1em;
+	}
+
+	.right div {
+		margin-left: 1em;
+	}
+
+	.profile-preview {
+		height: 300px;
+		width: 100%;
+		border: 2px solid black;
+		border-radius: 25px;
+		object-fit: cover;
+		object-position: 0px;
+		transform: scale(1.0);
+		transition: transform 0.5s;
+	}
+
+
+	.profile-preview {
+		width: 100%;
+	}
+
+	.project-profile div {
+		width: 30%;
+	}
+
+	.project-profile div {
+		width: 30%;
+	}
+}
+
+/*@media (hover: hover) {
+	.profile-preview:hover {
+		transform: scale(1.2);
 		transition: transform 1s;
 		cursor: pointer;
 	}
-}
+}*/
 
 /*.project-profile p {
 	width: 100%;
