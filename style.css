@@ -4,41 +4,87 @@
 	box-sizing: border-box;
 	/*color: aliceblue;*/
 	overflow-x: hidden;
+	font-family: 'Noto Sans', sans-serif;
 }
 
 body {
-	background-color: rgb(20,20,20);
+	background-color: #e2fdff;
 }
 
+header {
+	height: 75px;
+	background-color: #1b2991;
+	box-shadow: 0px 1px 10px black;
+}
 
+footer {
+	position: relative;
+}
 
-.main {
-	background-color: royalblue;
-	margin: 5em 1em;
+h1 {
+	color: rgba(50,50,50,0.9);
+	font-size: 3em;
+	margin: 1em 0;
+	text-align: left;
+}
+
+main h1 {
+	text-align: center;
+	/*padding-left: 1rem;*/
+}
+
+.intro {
+	color: black;
+	margin: 5em 1em 0;
 	padding: 1em;
 	border-radius: 10px;
-	height: 100vw;
+	height: 100%;
+	border-bottow: 1px solid lightgrey;
+}
+
+.text-highlight {
+	/*font-size: em;*/
+	color: #1b2991;
+	border-bottom: 1px solid lightgrey;
+}
+
+.intro h1 {
+	margin-bottom: 1em;
+	padding-bottom: 1em;
+	/*border-bottom: 1px solid lightgrey;*/
+}
+
+.portfolio-overview {
+	width: 100%;
+	background-color: white;
+	padding: 1em;
 }
 
 button {
 	color: black;
 }
 
-header {
-	background-color: royalblue;
-	color: aliceblue;
-}
 
 nav {
+	color: white;
+	height: 75px;
 	display: flex;
 	justify-content: right;
+	align-items: center;
+}
+
+nav a {
+	text-decoration: none;
+	color: black;
 }
 
 nav li {
-	text-decoration: none;
 	list-style: none;
-	width: 75px;
-	text-align: center;
+	color: white;
+	padding: 1em;
+	/*font-size: 1.5em;*/
+	/*width: 75px;*/
+	/*text-align: center;*/
 }
 
 .project-profile {
@@ -46,10 +92,39 @@ nav li {
 	padding: 1em;
 	margin-bottom: 4em;
 	background-color: white;
+	/*box-shadow: 2px 0px 5px 2px aliceblue;*/
 }
 
 .project-profile h2, p {
 	margin-bottom: 1em;
+}
+
+.mobile-profile-off {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: even;
+}
+
+.mobile-off-links {
+	display: flex;
+	justify-content: space-around;
+	align-items: top;
+	/*margin-top: 2em;*/
+	padding-top: 1em;
+	/*padding-right: 2em;*/
+}
+
+.mobile-off-links li {
+	padding: 0.5em;
+	border: 2px solid black;
+}
+
+.mobile-off-links a {
+	width: 40%;
+	text-align: center;
+	text-decoration: none;
+	color: black;
 }
 
 .project-profile button {
@@ -70,8 +145,22 @@ nav li {
 		transition: font-size 1s;
 	}
 }
+
+.profile-description {
+	margin-top: 1em;
+	padding-top: 1em;
+	border-top: 1px solid lightgrey;
+
+}
 .mobile-profile-on {
 	display: block;
+	margin-top: 1em;
+	padding-top: 1.5em;
+	border-top: 1px solid lightgrey;
+}
+
+.mobile-profile-on p {
+	padding-top: 0.5em;
 }
 
 .mobile-profile-off {
@@ -81,9 +170,21 @@ nav li {
 .profile-preview {
 	width: 100%;
 	border-radius: 5px;
+	border: 1px solid lightgrey;
+	/*padding-bottom: 0.5em;*/
+}
+
+img {
+	border-radius: 5px;
 }	
 
-
+/*@media (min-width: 550px) {
+	.project-profile {
+		width: 90%;
+		margin: 0 auto 4em;
+	}
+}
+*/
 
 @media (min-width: 700px) {
 
@@ -92,8 +193,36 @@ nav li {
 	}
 
 	.mobile-profile-off {
-		display: block;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+		align-items: even;
 	}
+
+	.mobile-off-links {
+		display: flex;
+		justify-content: left;
+		align-items: top;
+		padding-right: 2em;
+	}
+
+	.mobile-off-links li {
+		padding: 0.5em;
+		border: 2px solid black;
+	}
+
+	.mobile-off-links a {
+		width: 40%;
+		text-align: center;
+		text-decoration: none;
+		color: black;
+	}
+
+	/*.mobile-off-links a {
+		padding: 0.5em 1em;
+		border: 2px solid black;
+		border-radius: 5px;
+	}*/
 
 	.project-profile {
 		width: 100%;
@@ -155,12 +284,12 @@ nav li {
 	}
 
 	.project-profile div {
-		width: 30%;
+		width: 40%;
 	}
 
 }
 
-@media (min-width: 800px) {
+/*@media (min-width: 800px) {
 
 	.mobile-profile-on {
 		display: none;
@@ -237,7 +366,7 @@ nav li {
 		width: 30%;
 	}
 }
-
+*/
 @media (min-width: 1000px) {
 
 	.mobile-profile-on {
@@ -245,7 +374,29 @@ nav li {
 	}
 
 	.mobile-profile-off {
-		display: block;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+		align-items: even;
+	}
+
+	.mobile-off-links {
+		display: flex;
+		justify-content: left;
+		align-items: top;
+		padding-right: 2em;
+	}
+
+	.mobile-off-links li {
+		padding: 0.5em;
+		border: 2px solid black;
+	}
+
+	.mobile-off-links a {
+		width: 40%;
+		text-align: center;
+		text-decoration: none;
+		color: black;
 	}
 
 	.project-profile {
