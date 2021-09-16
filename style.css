@@ -54,16 +54,52 @@ main h1 {
 	/*border-bottom: 1px solid lightgrey;*/
 }
 
-.portfolio-overview {
+.main-overview {
 	width: 100%;
 	background-color: white;
 	padding: 1em;
 }
 
-button {
-	color: black;
+.overview-section-heading {
+	margin-bottom: 0.25em;
 }
 
+.overview-section-content {
+	border: 1px solid lightgrey;
+	border-radius: 10px;
+	margin-bottom: 1em;
+	padding: 0.25em 0.5em 0;
+}
+
+.options-container {
+	margin: 0 1em 5em;
+}
+
+.main-overview-nav {
+	display: flex;
+	justify-content: space-evenly;
+	margin-bottom: 1em;
+}
+
+.main-overview-nav-button {
+	background-color: white;
+	border: none;
+	width: 33%;
+	text-align: center;
+}
+
+.main-overview-nav-button-selected {
+	background-color: white;
+	color: black;
+	width: 33%;
+	text-align: center;
+	border-bottom: 2px solid #1b2991;
+}
+
+/*button {
+	color: black;
+}
+*/
 
 nav {
 	color: white;
