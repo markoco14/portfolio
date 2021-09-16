@@ -121,7 +121,11 @@ class OverviewCurrentProjectSection extends React.Component {
 								See live
 							</a>
 						</button>
-						<button className="link-button">View code</button>
+						<button className="link-button">
+							<a href="https://github.com/Covid-Taichung/cfiw/blob/main/map/map-marker-toggles.js">
+								View code
+							</a>
+						</button>
 					</div>
 					<div>
 						<img src="cfiw_site_1.JPG" className="profile-preview"></img>
