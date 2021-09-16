@@ -108,14 +108,6 @@ class OverviewCurrentProjectSection extends React.Component {
 				<div className="overview-section-content project-container">
 					<div>
 						<h3>Covid Taichung Google Maps API</h3>
-						<p>
-							The Google Maps API gives users of covid-taichung.com
-							more control over what they see on the map. Users can
-							choose to view public covid-19 data to view daily 
-							footprints of confirmed cases, locations of disinfections,
-							and locations of health facilities in Taichung that offer
-							covid-19 testing and vaccinations. 
-						</p>
 						<button className="link-button">
 							<a href="https://covid-taichung.github.io/cfiw/map-v3.html">
 								See live
@@ -126,6 +118,14 @@ class OverviewCurrentProjectSection extends React.Component {
 								View code
 							</a>
 						</button>
+						<p>
+							The Google Maps API gives users of covid-taichung.com
+							more control over what they see on the map. Users can
+							choose to view public covid-19 data to view daily 
+							footprints of confirmed cases, locations of disinfections,
+							and locations of health facilities in Taichung that offer
+							covid-19 testing and vaccinations. 
+						</p>
 					</div>
 					<div>
 						<img src="cfiw_site_1.JPG" className="profile-preview"></img>
