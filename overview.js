@@ -124,7 +124,7 @@ class OverviewCurrentProjectSection extends React.Component {
 						<button className="link-button">View code</button>
 					</div>
 					<div>
-						<img src="cfiw_site_1.jpg" className="profile-preview"></img>
+						<img src="cfiw_site_1.JPG" className="profile-preview"></img>
 					</div>
 					<p><a href="projects.html">Click here to see the full list of my projects.</a></p>
 				</div>
