@@ -97,10 +97,15 @@ main h1 {
 	border-bottom: 2px solid #1b2991;
 }
 
-/*button {
-	color: black;
+/* style overview contact section */
+
+/* style overview current project section */
+
+.overview-project-preview {
+	
 }
-*/
+
+/* style overview resume section */
 
 nav {
 	color: white;
