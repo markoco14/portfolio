@@ -44,13 +44,23 @@ nav li:hover {
 }
 
 .header-nav-selected {
+	color: white;
+	background-color: #1b2991;
 	font-weight: bold;
+	border: none;
 	border-bottom: 2px solid white;
+}
+
+.header-nav-not-selected {
+	color: white;
+	background-color: #1b2991;
+	border: none;
 }
 
 .header-nav-not-selected:hover {
 	font-weight: bold;
 }
+
 
 footer {
 	position: relative;

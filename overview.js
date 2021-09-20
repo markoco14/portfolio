@@ -89,10 +89,10 @@ class OverviewContactSection extends React.Component {
 			<div className="contact">
 				<h2 className="overview-section-heading">Contact</h2>
 				<div className="overview-section-content">
-					<label for="name">
+					{/*<label for="name">
 						Name:
 						<input id="name" type="text" placeholder="John"></input>
-					</label>
+					</label>*/}
 					<p>e-mail: mark.oconnor14@gmail.com</p>
 					<p>phone: +886 (0) 905 255 247</p>
 					<p>104</p>
@@ -490,5 +490,5 @@ class MainOverviewSection extends React.Component {
 
 
 
-const domContainer = document.querySelector('#main-overview');
-ReactDOM.render(e(MainOverviewSection), domContainer);
+const overviewContainer = document.querySelector('#main-overview');
+ReactDOM.render(e(MainOverviewSection), overviewContainer);
