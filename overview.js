@@ -89,6 +89,10 @@ class OverviewContactSection extends React.Component {
 			<div className="contact">
 				<h2 className="overview-section-heading">Contact</h2>
 				<div className="overview-section-content">
+					<label for="name">
+						Name:
+						<input id="name" type="text" placeholder="John"></input>
+					</label>
 					<p>e-mail: mark.oconnor14@gmail.com</p>
 					<p>phone: +886 (0) 905 255 247</p>
 					<p>104</p>
@@ -143,7 +147,7 @@ class OverviewResumeSection extends React.Component {
 	constructor(props) {
 		super(props);
 		this.state = ({
-			selectedResumeSection: "Coding Experience",
+			selectedResumeSection: "Education",
 		});
 		this.handleChangeResumeSection = this.handleChangeResumeSection.bind(this);
 		// this.handleDisplayWorkExperience = this.handleDisplayWorkExperience.bind(this);
@@ -189,11 +193,71 @@ class OverviewResumeSection extends React.Component {
 							</div>
 							<div className="resume-sections">
 								<div className="coding-experience">
-									<p>coding experiences goes here</p>
-									<p>Dialogue Writer App</p>
-									<p>Covid Taichung</p>
-									<p>Taiwan Tax Calculator</p>
-									<p>Whiteboard Website</p>
+									<div className="experience-item">
+										<div className="experience-header">
+											<h3>
+												Dialogue Writer Web App
+											</h3>
+										</div>
+										<p className="experience-position-title">
+											ReactJS 
+										</p>
+										<p>
+											Write 2 person dialogues for your language classes.
+											The text you write is automatically formatted into
+											a dialogue so you can focus on what counts - writing. Write fun
+											and engaging dialogues so your students can learn to
+											speak naturally in any situation you can imagine.
+										</p>
+										
+									</div>
+									<div className="experience-item">
+										
+										<div className="experience-header">
+											<h3>
+												Covid Taichung
+											</h3>
+										</div>
+										<p className="experience-position-title">
+											Javascript, Google Maps API
+										</p>
+										<p>
+											Covid-19 information website for foreigners living in Taichung,
+											Taiwan. Local and imported cases are updated daily. The FAQ contains
+											extensive information on lockdown restrictions, social distancing 
+											policies, and Taiwan's vaccination schedule. Our Google Maps API shows 
+											covid case footprints, scheduled disinfection locations, and health facility
+											locations for testing and vaccinations.
+										</p>
+									</div>
+									<div className="experience-item">
+										
+										<div className="experience-header">
+											<h3>
+												Taiwan Tax Calculator
+											</h3>
+										</div>
+										<p className="experience-position-title">
+											Javascript, Currency Exchange API
+										</p>
+										<p>
+											Calculate your income and taxes in Taiwan.
+											Input your desired income in NTD and see the breakdown
+											of your net income and how much you pay in taxes. 
+										</p>
+									</div>
+
+									{/*<div className="experience-header">
+										<h3>
+											Whiteboard Website
+										</h3>
+									</div>
+									<p className="experience-position-title">
+										Javascript, Canvas API
+									</p>
+									<p>
+										 
+									</p>*/}
 								</div>
 							</div>
 
@@ -229,21 +293,65 @@ class OverviewResumeSection extends React.Component {
 							</div>
 							<div className="resume-sections">
 								<div className="work-experience">
-									<p>
-										Junior Class Teacher. Wagor Kindergarten. I'm a full-time teacher of 20 juniors. I show them everything from the ABC's, to reading. From math to science. I get the joy of watching as they make the connections and have ideas of their own. July 2020 - Present
-									</p>
-									<p>
-										English Teacher  •  Joy English Buxiban
-										I was a full-time teacher of classes ranging from introductory English to GEPT preparation. I taught grammar, pronunciation, and critical thinking in fast, interactive speaking classes.
-
-										June 2019 - June 2020
-									</p>
-									<p>
-										Literature Class Teacher   •  Wagor International School (WISE)
-										I taught literature junior and senior high school students.
-
-										March 2018 - June 2019
-									</p>
+									<div className="experience-item">
+										
+										<div className="experience-header">
+											<h3>
+												Wagor Kindergarten Taichung
+											</h3>
+											<div>
+												August 2020 - July 2021
+											</div>
+										</div>
+										<p className="experience-position-title"> Junior Class Teacher </p>
+										<p>
+											I was a full-time teacher of 20 juniors. 
+											I taught everything from the ABC's to reading. 
+											From math to science. The students grew from zero English to
+											spending every day completely immersed in English.
+										</p>
+									</div>
+									<div className="experience-item">
+										<div className="experience-header">
+											<h3>
+												Joy English Buxiban Taichung
+											</h3>
+											<div>
+												June 2019 - June 2020
+											</div>
+										</div>
+										<p className="experience-position-title"> English Teacher </p>
+										<p>
+											I was a full-time teacher of classes ranging from 
+											introductory English to GEPT preparation. I taught grammar, 
+											pronunciation, and critical thinking in fast-paced, 
+											interactive speaking classes.
+										</p>
+										
+									</div>
+									<div className="experience-item">
+										
+										<div className="experience-header">
+											<h3>
+												Wagor International School (WISE)
+											</h3>
+											<div>
+												March 2018 - June 2019
+											</div>
+										</div>
+										<p className="experience-position-title">
+											Literature Class Teacher
+										</p>
+										<p>
+											I taught English literature to students ranging from 
+											grade 8 - 12. I taught according to the US Common Core 
+											State Standards Initiative. These standards follow guidelines
+											laid out by the US Department of Education and provide
+											students with a foundation in English literacy and critical
+											thinking to guarantee success in their university and professional
+											lives.
+										</p>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -278,12 +386,23 @@ class OverviewResumeSection extends React.Component {
 							</div>
 							<div className="resume-sections">
 								<div className="education-experience">
-									<p>
-										2008 - 2014 Simon Fraser University Business Administration
+									<div className="experience-header">
+										<h3>
+											Simon Fraser University
+										</h3>
+										<div>
+											2008 - 2014
+										</div>
+									</div>
+									<p className="experience-position-title">
+										Bachelor of Business Administration
 									</p>
 									<p>
-										Programming tutorials. MDN React To-do App. ReactJS tic-tac-toe app. MDN Javascript. Kahn Academy HTML, CSS, and Javascript
+										Graduated with honors. 
+										Major in International Marketing.
+										Minor in Product Development.
 									</p>
+				
 								</div>
 							</div>
 						</div>
@@ -298,7 +417,7 @@ class MainOverviewSection extends React.Component {
 	constructor(props){
 		super(props);
 		this.state = ({
-			selectedOverviewSection: "Contact"
+			selectedOverviewSection: "Resume"
 		});				
 		this.handleChangeOverviewSection = this.handleChangeOverviewSection.bind(this)
 		// this.handleDisplayCurrentProjectSection = this.handleDisplayCurrentProjectSection.bind(this)

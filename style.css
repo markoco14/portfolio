@@ -17,6 +17,41 @@ header {
 	box-shadow: 0px 1px 10px black;
 }
 
+nav {
+	color: white;
+	height: 75px;
+	display: flex;
+	justify-content: right;
+	align-items: center;
+}
+
+nav a {
+	text-decoration: none;
+	color: black;
+}
+
+nav li {
+	list-style: none;
+	color: white;
+	padding: 1em;
+	/*font-size: 1.5em;*/
+	/*width: 75px;*/
+	/*text-align: center;*/
+}
+
+nav li:hover {
+	font-weight: bold;
+}
+
+.header-nav-selected {
+	font-weight: bold;
+	border-bottom: 2px solid white;
+}
+
+.header-nav-not-selected:hover {
+	font-weight: bold;
+}
+
 footer {
 	position: relative;
 }
@@ -88,46 +123,49 @@ main h1 {
 	text-align: center;
 }
 
+.main-overview-nav-button:hover {
+	font-weight: bold;
+}
+
 .main-overview-nav-button-selected {
 	background-color: white;
-	color: black;
+	color: #1b2991;
 	width: 33%;
 	text-align: center;
 	border: none;
+	font-weight: bold;
 	border-bottom: 2px solid #1b2991;
+}
+
+.experience-item {
+	margin-bottom: 1em;
+	border-bottom: 1px solid lightgrey;
+}
+
+.experience-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 0.5em;
+}
+
+.experience-position-title {
+	font-weight: bold;
+	color: #1b2991;
 }
 
 /* style overview contact section */
 
 /* style overview current project section */
 
-.overview-project-preview {
+/*.overview-project-preview {
 	
-}
+}*/
 
 /* style overview resume section */
 
-nav {
-	color: white;
-	height: 75px;
-	display: flex;
-	justify-content: right;
-	align-items: center;
-}
 
-nav a {
-	text-decoration: none;
-	color: black;
-}
 
-nav li {
-	list-style: none;
-	color: white;
-	padding: 1em;
-	/*font-size: 1.5em;*/
-	/*width: 75px;*/
-	/*text-align: center;*/
-}
 
 .project-profile {
 	width: 100%;
