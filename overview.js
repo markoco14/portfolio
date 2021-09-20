@@ -344,8 +344,13 @@ class OverviewResumeSection extends React.Component {
 										</p>
 										<p>
 											I taught English literature to students ranging from 
-											grade 8 - 12. I taught according to the US Common Core 
-											State Standards Initiative. These standards follow guidelines
+											grade 8 - 12. I taught according to the <a 
+												href="http://www.corestandards.org/" 
+												target="_blank"
+												rel="noreferrer noopener"
+											>
+												 US Common Core State Standards Initiative
+											</a>. These standards follow guidelines
 											laid out by the US Department of Education and provide
 											students with a foundation in English literacy and critical
 											thinking to guarantee success in their university and professional
