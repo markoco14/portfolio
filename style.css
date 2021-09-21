@@ -204,9 +204,15 @@ h1 {
 }
 
 @media (hover: hover) {
+
+	.current-project-links li:hover {
+		border-color: #1b2991;
+	}
 	.current-project-links a:hover {
 		color: white;
 		background-color: #1b2991;
+		
+
 	}
 }
 
@@ -281,6 +287,10 @@ h1 {
 	.mobile-off-links a:hover {
 		color: white;
 		background-color: #1b2991;
+	}
+
+	.mobile-off-links li:hover {
+		border-color: #1b2991;
 	}
 
 	.project-profile button:hover {

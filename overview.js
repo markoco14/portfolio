@@ -124,7 +124,7 @@ class OverviewCurrentProjectSection extends React.Component {
 						</button>*/}
 					</div>
 					<div>
-						<img src="cfiw_site_1.JPG" className="profile-preview"></img>
+						<img src="current_project_googlemap.JPG" className="profile-preview"></img>
 					</div>
 						<ul className="current-project-links">
 							<a href="https://covid-taichung.github.io/cfiw/map-v3.html" 
