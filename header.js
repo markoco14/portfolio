@@ -1,5 +1,19 @@
 const f = React.createElement;
 
+// intro section extra code
+// class PageIntroSection extends React.Component {
+// 	render() {
+// 		return(
+// 			<div className="intro">
+// 				<h1>
+// 					Hi, <span className="text-highlight">I'm Mark</span>.<br />
+// 					I make things people need.
+// 				</h1>
+// 			</div>
+// 		);
+// 	}
+// }
+
 class NavBar extends React.Component {
 	constructor(props) {
 		super(props)

@@ -112,7 +112,7 @@ class OverviewCurrentProjectSection extends React.Component {
 				<div className="overview-section-content project-container">
 					<div>
 						<h3>Covid Taichung Google Maps API</h3>
-						<button className="link-button">
+						{/*<button className="link-button">
 							<a href="https://covid-taichung.github.io/cfiw/map-v3.html">
 								See live
 							</a>
@@ -121,7 +121,25 @@ class OverviewCurrentProjectSection extends React.Component {
 							<a href="https://github.com/Covid-Taichung/cfiw/blob/main/map/map-marker-toggles.js">
 								View code
 							</a>
-						</button>
+						</button>*/}
+					</div>
+					<div>
+						<img src="cfiw_site_1.JPG" className="profile-preview"></img>
+					</div>
+						<ul className="current-project-links">
+							<a href="https://covid-taichung.github.io/cfiw/map-v3.html" 
+								target="_blank" 
+								rel="noreferrer noopener"
+							>
+								<li>view site</li>
+							</a>
+							<a href="https://github.com/Covid-Taichung/cfiw/blob/main/map/map-marker-toggles.js"
+								target="_blank" 
+								rel="noreferrer noopener"
+							>
+								<li>view code</li>
+							</a>
+						</ul>
 						<p>
 							The Google Maps API gives users of covid-taichung.com
 							more control over what they see on the map. Users can
@@ -130,10 +148,7 @@ class OverviewCurrentProjectSection extends React.Component {
 							and locations of health facilities in Taichung that offer
 							covid-19 testing and vaccinations. 
 						</p>
-					</div>
-					<div>
-						<img src="cfiw_site_1.JPG" className="profile-preview"></img>
-					</div>
+						
 					<p><a href="projects.html">Click here to see the full list of my projects.</a></p>
 				</div>
 				{/*<div className="project-container">
@@ -168,6 +183,7 @@ class OverviewResumeSection extends React.Component {
 			case "Coding Experience":
 				console.log("Coding Experience")
 				return(
+
 					<div className="resume">
 						<h2 className="overview-section-heading">Resume</h2>
 						<div className="coding-experience overview-section-content">
@@ -418,6 +434,14 @@ class OverviewResumeSection extends React.Component {
 	}
 }
 
+// class MainIntro extends React.Component {
+// 	render() {
+// 		return(
+
+// 		);
+// 	}
+// }
+
 class MainOverviewSection extends React.Component {
 	constructor(props){
 		super(props);
@@ -442,6 +466,7 @@ class MainOverviewSection extends React.Component {
 			case "Contact":
 				console.log('Contact')
 				return(
+					<div className="main-overview">
 					<div className="options-container">
 						<OverviewNav
 							selectedOverviewSection={this.state.selectedOverviewSection} 
@@ -452,11 +477,13 @@ class MainOverviewSection extends React.Component {
 						<OverviewContactSection 
 						/>
 					</div>
+					</div>
 				);
 				break;
 			case "Current Project":
 				console.log('Current Project')
 				return(
+					<div className="main-overview">
 					<div className="options-container">
 						<OverviewNav 
 							selectedOverviewSection={this.state.selectedOverviewSection} 
@@ -467,11 +494,13 @@ class MainOverviewSection extends React.Component {
 						<OverviewCurrentProjectSection 
 						/>
 					</div>
+					</div>
 				);
 				break;
 			case "Resume":
 				console.log('Resume')
 				return(
+					<div className="main-overview">
 					<div className="options-container">
 						<OverviewNav
 							selectedOverviewSection={this.state.selectedOverviewSection} 
@@ -482,11 +511,14 @@ class MainOverviewSection extends React.Component {
 						<OverviewResumeSection 
 						/>
 					</div>
+					</div>
 				);
 				break;
 		}
 	}
 }
+
+
 
 
 

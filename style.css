@@ -11,11 +11,14 @@ body {
 	background-color: #e2fdff;
 }
 
+
+/* style the page header */
 header {
 	height: 75px;
 	background-color: #1b2991;
 	box-shadow: 0px 1px 10px black;
 }
+
 
 nav {
 	color: white;
@@ -23,25 +26,34 @@ nav {
 	display: flex;
 	justify-content: right;
 	align-items: center;
+	margin-right: 0.5em;
 }
 
 nav a {
 	text-decoration: none;
 	color: black;
+	color: white;
+	padding: 0.25em 1em;
 }
 
 nav li {
-	list-style: none;
+	/*list-style: none;
 	color: white;
-	padding: 1em;
+	padding: 1em;*/
 	/*font-size: 1.5em;*/
 	/*width: 75px;*/
 	/*text-align: center;*/
 }
 
-nav li:hover {
+.main-nav-selected {
+	font-weight: bold;
+	border-bottom: 2px solid white;
+}
+
+nav a:hover {
 	font-weight: bold;
 }
+
 
 .header-nav-selected {
 	color: white;
@@ -73,10 +85,7 @@ h1 {
 	text-align: left;
 }
 
-main h1 {
-	text-align: center;
-	/*padding-left: 1rem;*/
-}
+/* style each page intro section */
 
 .intro {
 	color: black;
@@ -98,6 +107,8 @@ main h1 {
 	padding-bottom: 1em;
 	/*border-bottom: 1px solid lightgrey;*/
 }
+
+/* style the home page main body */
 
 .main-overview {
 	width: 100%;
@@ -135,6 +146,7 @@ main h1 {
 
 .main-overview-nav-button:hover {
 	font-weight: bold;
+	cursor: pointer;
 }
 
 .main-overview-nav-button-selected {
@@ -145,6 +157,7 @@ main h1 {
 	border: none;
 	font-weight: bold;
 	border-bottom: 2px solid #1b2991;
+	cursor: pointer;
 }
 
 .experience-item {
@@ -164,6 +177,39 @@ main h1 {
 	color: #1b2991;
 }
 
+/* style the current project section */
+
+.current-project-links {
+	display: flex;
+	justify-content: space-around;
+	align-items: top;
+	/*margin-top: 2em;*/
+	padding-top: 1em;
+	/*padding-right: 2em;*/
+	margin-bottom: 0.5em;
+}
+
+.current-project-links li {
+	padding: 0.5em;
+	border: 2px solid black;
+	border-radius: 5px;
+}
+
+.current-project-links a {
+	width: 40%;
+	text-align: center;
+	text-decoration: none;
+	color: black;
+	border-radius: 5px;
+}
+
+@media (hover: hover) {
+	.current-project-links a:hover {
+		color: white;
+		background-color: #1b2991;
+	}
+}
+
 /* style overview contact section */
 
 /* style overview current project section */
@@ -176,6 +222,8 @@ main h1 {
 
 
 
+
+/* style the projects page */
 
 .project-profile {
 	width: 100%;
@@ -208,6 +256,8 @@ main h1 {
 .mobile-off-links li {
 	padding: 0.5em;
 	border: 2px solid black;
+	border-radius: 5px;
+
 }
 
 .mobile-off-links a {
@@ -215,6 +265,7 @@ main h1 {
 	text-align: center;
 	text-decoration: none;
 	color: black;
+	border-radius: 5px;
 }
 
 .project-profile button {
@@ -226,6 +277,11 @@ main h1 {
 }
 
 @media (hover: hover) {
+
+	.mobile-off-links a:hover {
+		color: white;
+		background-color: #1b2991;
+	}
 
 	.project-profile button:hover {
 		background-color: royalblue;
@@ -278,6 +334,30 @@ img {
 
 @media (min-width: 700px) {
 
+	.intro h1 {
+		position: relative;
+		margin: auto;
+		width: 90%;
+	}
+
+	.options-container {
+		position: relative;
+		margin: auto;
+		width: 90%;
+	}
+
+	.current-project-links {
+		justify-content: center;
+	}
+
+	.current-project-links a {
+		width: 20%;
+		text-align: center;
+		text-decoration: none;
+		margin: 0 0.25em;
+		color: black;
+	}
+
 	.mobile-profile-on {
 		display: none;
 	}
@@ -306,6 +386,7 @@ img {
 		text-align: center;
 		text-decoration: none;
 		color: black;
+		margin: 0 0.25em;
 	}
 
 	/*.mobile-off-links a {
@@ -458,6 +539,18 @@ img {
 }
 */
 @media (min-width: 1000px) {
+
+	/*.intro h1 {
+		position: relative;
+		margin: auto;
+		width: 70%;
+	}
+
+	.options-container {
+		position: relative;
+		margin: 0 auto;
+		width: 70%;
+	}*/
 
 	.mobile-profile-on {
 		display: none;
