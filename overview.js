@@ -127,12 +127,12 @@ class OverviewContactSection extends React.Component {
 						</div>
 						<div className="contact-row">
 							<div className="contact-icon-box"><i className="fa fa-envelope"></i></div>
-							<p>Email: <a href="mailto:mark.oconnor14@gmail.com">mark.oconnor14@gmail.com
+							<p><a href="mailto:mark.oconnor14@gmail.com">mark.oconnor14@gmail.com
 							</a></p>
 						</div>
 						<div className="contact-row">
 							<div className="contact-icon-box"><i className="fa fa-phone"></i></div>
-							<p>Phone: <a href="tel:+886905255247">+886 (0) 905 255 247
+							<p><a href="tel:+886905255247">+886 (0) 905 255 247
 							</a></p>
 						</div>
 					</div>
