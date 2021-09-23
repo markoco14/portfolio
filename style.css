@@ -303,6 +303,10 @@ h1 {
 	transition: font-size 1s;
 }
 
+button:active {
+	border: none;
+}
+
 @media (hover: hover) {
 
 	.mobile-off-links a:hover {
