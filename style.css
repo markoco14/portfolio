@@ -190,6 +190,10 @@ h1 {
 	margin-right: 0.25em;
 }
 
+.contact-container a {
+	color: black;
+}
+
 /* style the current project section */
 
 .current-project-links {
@@ -276,7 +280,11 @@ h1 {
 	padding: 0.5em;
 	border: 2px solid black;
 	border-radius: 5px;
+}
 
+.mobile-off-links a:active {
+	background-color: 1b2991;
+	border-color: 1b2991;
 }
 
 .mobile-off-links a {

@@ -110,13 +110,11 @@ class OverviewContactSection extends React.Component {
 					</form>*/}
 					<div className="contact-container">
 						<p>
-							<i className="fa fa-envelope"></i>
-							e-mail: <a href="mailto:mark.oconnor14@gmail.com">mark.oconnor14@gmail.com
-							</a>
-						</p>
-						<p>
-							<i className="fa fa-phone"></i>
-							phone: <a href="tel:+886905255247">+886 (0) 905 255 247
+							<i className="fa fa-github"></i>
+							<a href="https://github.com/markoco14?tab=repositories"
+								target="_blank"
+							>
+								 View Github repositories
 							</a>
 						</p>
 						<p>
@@ -124,15 +122,17 @@ class OverviewContactSection extends React.Component {
 							<a href="https://www.cakeresume.com/mark-o-connor"
 								target="_blank"
 							>
-								cake resume
+								View online resume
 							</a>
 						</p>
 						<p>
-							<i className="fa fa-github"></i>
-							<a href="https://github.com/markoco14?tab=repositories"
-								target="_blank"
-							>
-								gitub
+							<i className="fa fa-envelope"></i>
+							e-mail: <a href="mailto:mark.oconnor14@gmail.com">mark.oconnor14@gmail.com
+							</a>
+						</p>
+						<p>
+							<i className="fa fa-phone"></i>
+							phone: <a href="tel:+886905255247">+886 (0) 905 255 247
 							</a>
 						</p>
 					</div>
