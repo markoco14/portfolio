@@ -109,32 +109,32 @@ class OverviewContactSection extends React.Component {
 						</label>
 					</form>*/}
 					<div className="contact-container">
-						<p>
-							<i className="fa fa-github"></i>
-							<a href="https://github.com/markoco14?tab=repositories"
+						<div className="contact-row">
+							<div className="contact-icon-box"><i className="fa fa-github"></i></div>
+							<p><a href="https://github.com/markoco14?tab=repositories"
 								target="_blank"
 							>
 								 View Github repositories
-							</a>
-						</p>
-						<p>
-							<i className="fa fa-file-alt"></i>
-							<a href="https://www.cakeresume.com/mark-o-connor"
+							</a></p>
+						</div>
+						<div className="contact-row">
+							<div className="contact-icon-box"><i className="fa fa-file-alt"></i></div>
+							<p><a href="https://www.cakeresume.com/mark-o-connor"
 								target="_blank"
 							>
 								View online resume
-							</a>
-						</p>
-						<p>
-							<i className="fa fa-envelope"></i>
-							e-mail: <a href="mailto:mark.oconnor14@gmail.com">mark.oconnor14@gmail.com
-							</a>
-						</p>
-						<p>
-							<i className="fa fa-phone"></i>
-							phone: <a href="tel:+886905255247">+886 (0) 905 255 247
-							</a>
-						</p>
+							</a></p>
+						</div>
+						<div className="contact-row">
+							<div className="contact-icon-box"><i className="fa fa-envelope"></i></div>
+							<p>Email: <a href="mailto:mark.oconnor14@gmail.com">mark.oconnor14@gmail.com
+							</a></p>
+						</div>
+						<div className="contact-row">
+							<div className="contact-icon-box"><i className="fa fa-phone"></i></div>
+							<p>Phone: <a href="tel:+886905255247">+886 (0) 905 255 247
+							</a></p>
+						</div>
 					</div>
 						
 				</div>
