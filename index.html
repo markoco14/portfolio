@@ -7,39 +7,34 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="stylesheet"
           href="https://fonts.googleapis.com/css2?family=Noto+Sans">
-    <!-- Load React. -->
+    <!-- links to react -->
     <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
     <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
     <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
 
-    
+    <!-- link to babel script parser -->
     <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+    <!-- link to font awesome kit -->
+    <script src="https://kit.fontawesome.com/d0c81e3c08.js" crossorigin="anonymous"></script>
 </head>
 <body>
 	<header id="header-nav">
-		<!-- <nav>
-			<li><a href="index.html"></a>Home</li>
-			<li><a href="projects.html">Projects</a></li>
-			<li><a href="resume.html">Resume</a></li>
-		</nav> -->
+		
 		<!-- <p>put a logo here</p> -->
 		<!-- <p>Only a logo goes here.</p> -->
 		<nav>
 			<a href="index.html" class="main-nav-selected">Home</a>
 			<a href="projects.html">Projects</a>
-			<a href="about.html">About</a>
+			<!-- <a href="about.html">About</a> -->
 		</nav>
-		<!-- <nav>
-			<a href="index.html"><li class="header-nav-selected">Home</li></a>
-			<a href="projects.html"><li>Projects</li></a>
-			<a href="about.html"><li>About</li></a>
-		</nav> -->
+		
 	</header>
 	<main id="root">
 		<div class="intro">
 			<h1>
 				Hi, <span class="text-highlight">I'm Mark</span>.<br>
-				I make things people need.
+				I make things I wish were already made.
 			</h1>
 		</div>
 		<div id="main-overview">
@@ -53,8 +48,7 @@
 	<!-- <footer>
 		<p>a footer will go here</p>
 	</footer> -->
-	<!-- Load our React component. -->
-	<!-- <script src="header.js" type="text/babel"></script> -->
+	<!-- React script for home page overview section -->
     <script src="overview.js" type="text/babel"></script>
 </body>
 </html>

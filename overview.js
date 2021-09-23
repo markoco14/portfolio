@@ -93,11 +93,50 @@ class OverviewContactSection extends React.Component {
 						Name:
 						<input id="name" type="text" placeholder="John"></input>
 					</label>*/}
-					<p>e-mail: mark.oconnor14@gmail.com</p>
-					<p>phone: +886 (0) 905 255 247</p>
-					<p>104</p>
-					<p>cake resume</p>
-					<p>github</p>
+					
+					{/*<form>
+						<label>
+							Name:
+							<input placeholder="Name"/>
+						</label>
+						<label>
+							Email:
+							<input placeholder="Email"/>
+						</label>
+						<label>
+							Message:
+							<textarea placeholder="Please type your message here"></textarea>
+						</label>
+					</form>*/}
+					<div className="contact-container">
+						<p>
+							<i className="fa fa-envelope"></i>
+							e-mail: <a href="mailto:mark.oconnor14@gmail.com">mark.oconnor14@gmail.com
+							</a>
+						</p>
+						<p>
+							<i className="fa fa-phone"></i>
+							phone: <a href="tel:+886905255247">+886 (0) 905 255 247
+							</a>
+						</p>
+						<p>
+							<i className="fa fa-file-alt"></i>
+							<a href="https://www.cakeresume.com/mark-o-connor"
+								target="_blank"
+							>
+								cake resume
+							</a>
+						</p>
+						<p>
+							<i className="fa fa-github"></i>
+							<a href="https://github.com/markoco14?tab=repositories"
+								target="_blank"
+							>
+								gitub
+							</a>
+						</p>
+					</div>
+						
 				</div>
 			</div>
 		);
@@ -108,10 +147,10 @@ class OverviewCurrentProjectSection extends React.Component {
 	render() {
 		return(
 			<div className="current">
-				<h2 className="overview-section-heading">Current Project</h2>
+				<h2 className="overview-section-heading">Current Project: Covid Taichung Google Maps API</h2>
+				<p><a href="projects.html">(Click here to see the full list of my projects)</a></p>
 				<div className="overview-section-content project-container">
 					<div>
-						<h3>Covid Taichung Google Maps API</h3>
 						{/*<button className="link-button">
 							<a href="https://covid-taichung.github.io/cfiw/map-v3.html">
 								See live
@@ -149,7 +188,6 @@ class OverviewCurrentProjectSection extends React.Component {
 							covid-19 testing and vaccinations. 
 						</p>
 						
-					<p><a href="projects.html">Click here to see the full list of my projects.</a></p>
 				</div>
 				{/*<div className="project-container">
 				</div>*/}
@@ -162,7 +200,7 @@ class OverviewResumeSection extends React.Component {
 	constructor(props) {
 		super(props);
 		this.state = ({
-			selectedResumeSection: "Education",
+			selectedResumeSection: "Coding Experience",
 		});
 		this.handleChangeResumeSection = this.handleChangeResumeSection.bind(this);
 		// this.handleDisplayWorkExperience = this.handleDisplayWorkExperience.bind(this);
@@ -446,7 +484,7 @@ class MainOverviewSection extends React.Component {
 	constructor(props){
 		super(props);
 		this.state = ({
-			selectedOverviewSection: "Resume"
+			selectedOverviewSection: "Contact"
 		});				
 		this.handleChangeOverviewSection = this.handleChangeOverviewSection.bind(this)
 		// this.handleDisplayCurrentProjectSection = this.handleDisplayCurrentProjectSection.bind(this)
