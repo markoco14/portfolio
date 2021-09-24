@@ -26,6 +26,8 @@ header {
 	height: 75px;
 	background-color: var(--dark-blue);
 	box-shadow: 0px 1px 10px black;
+	display: flex;
+	justify-content: right;
 }
 
 
