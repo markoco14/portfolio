@@ -157,10 +157,6 @@ h1 {
 	text-align: center;
 }
 
-.main-overview-nav-button:focus {
-	border: none;
-}
-
 @media (hover: hover) {
 
 	.main-overview-nav-button:hover {
@@ -178,10 +174,6 @@ h1 {
 	font-weight: bold;
 	border-bottom: 2px solid var(--dark-blue);
 	cursor: pointer;
-}
-
-.main-overview-nav-button-selected:focus {
-	border: none;
 }
 
 .experience-item {
