@@ -1,3 +1,12 @@
+:root {
+	--dark-blue: #1b2991;
+	--light-blue: #e2fdff;
+	--text-dark:  rgba(50,50,50,0.9);
+	/*white for text color and background color*/
+	/*lightgrey for border color and page separation*/
+
+}
+
 * {
 	margin: 0;
 	padding: 0;
@@ -8,14 +17,14 @@
 }
 
 body {
-	background-color: #e2fdff;
+	background-color: --light-blue;
 }
 
 
 /* style the page header */
 header {
 	height: 75px;
-	background-color: #1b2991;
+	background-color: --dark-blue;
 	box-shadow: 0px 1px 10px black;
 }
 
@@ -57,7 +66,7 @@ nav a:hover {
 
 .header-nav-selected {
 	color: white;
-	background-color: #1b2991;
+	background-color: --dark-blue;
 	font-weight: bold;
 	border: none;
 	border-bottom: 2px solid white;
@@ -65,7 +74,7 @@ nav a:hover {
 
 .header-nav-not-selected {
 	color: white;
-	background-color: #1b2991;
+	background-color: --dark-blue;
 	border: none;
 }
 
@@ -79,7 +88,7 @@ footer {
 }
 
 h1 {
-	color: rgba(50,50,50,0.9);
+	color: --text-dark;
 	font-size: 3em;
 	margin: 1em 0;
 	text-align: left;
@@ -98,7 +107,7 @@ h1 {
 
 .text-highlight {
 	/*font-size: em;*/
-	color: #1b2991;
+	color: --dark-blue;
 	border-bottom: 1px solid lightgrey;
 }
 
@@ -151,12 +160,12 @@ h1 {
 
 .main-overview-nav-button-selected {
 	background-color: white;
-	color: #1b2991;
+	color: --dark-blue;
 	width: 33%;
 	text-align: center;
 	border: none;
 	font-weight: bold;
-	border-bottom: 2px solid #1b2991;
+	border-bottom: 2px solid --dark-blue;
 	cursor: pointer;
 }
 
@@ -174,7 +183,7 @@ h1 {
 
 .experience-position-title {
 	font-weight: bold;
-	color: #1b2991;
+	color: --dark-blue;
 }
 
 .contact-container {
@@ -241,11 +250,11 @@ h1 {
 @media (hover: hover) {
 
 	.current-project-links li:hover {
-		border-color: #1b2991;
+		border-color: --dark-blue;
 	}
 	.current-project-links a:hover {
 		color: white;
-		background-color: #1b2991;
+		background-color: --dark-blue;
 		
 
 	}
@@ -301,8 +310,8 @@ h1 {
 }
 
 .mobile-off-links a:active {
-	background-color: 1b2991;
-	border-color: 1b2991;
+	background-color: --dark-blue;
+	border-color: --dark-blue;
 }
 
 .mobile-off-links a {
@@ -329,11 +338,11 @@ button:active {
 
 	.mobile-off-links a:hover {
 		color: white;
-		background-color: #1b2991;
+		background-color: --dark-blue;
 	}
 
 	.mobile-off-links li:hover {
-		border-color: #1b2991;
+		border-color: --dark-blue;
 	}
 
 	.project-profile button:hover {
