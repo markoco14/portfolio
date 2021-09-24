@@ -156,7 +156,7 @@ class OverviewCurrentProjectSection extends React.Component {
 				<p><a href="projects.html">(Click here to see the full list of my projects)</a></p>
 				<div className="overview-section-content project-container">
 					<div>
-						<img src="current_project_googlemap.JPG" className="profile-preview"></img>
+						<img src="img/current_project_googlemap.JPG" className="profile-preview"></img>
 					</div>
 						<ul className="current-project-links">
 							<a href="https://covid-taichung.github.io/cfiw/map-v3.html" 
