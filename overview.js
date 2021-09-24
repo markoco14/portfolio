@@ -1,12 +1,19 @@
-// a js file, yay
-
 const e = React.createElement;
 
-class OverviewNav extends React.Component {
+/*
+	OverviewNav might need to be renamed to OverviewSectionSelector.
+	It does function as a navbar but it is too easy to confuse it with the true navbar.
+	The OverviewNav component allows users to toggle views in the overview section at
+	the bottom of the homepage.
+		1) Contact
+		2) Current Project
+		3) Resume
+*/
+
+class HomepageOverviewSectionSelector extends React.Component {
 	render() {
 		switch (this.props.selectedOverviewSection) {
 			case "Contact":
-				console.log("Contact");
 				return(
 					<div className="main-overview-nav">
 						<button
@@ -31,7 +38,6 @@ class OverviewNav extends React.Component {
 				);
 				break;
 			case "Current Project":
-				console.log("Current Project");
 				return(
 					<div className="main-overview-nav">
 						<button
@@ -83,31 +89,24 @@ class OverviewNav extends React.Component {
 	}
 }
 
+/*
+	The OverviewContactSection can keep the same name. This component
+	is the view where users can see my contact information on the homepage.
+	I may want to add a contact form to this section. I think it would look better
+	and I can still provide the other contact information below.
+
+	Another option is to just turn this into an About section. But a more detailed
+	"About" page might be better. It would give me more space to write briefly about myself,
+	place a picture, and provide more detailed info about what I'm doing and what I'm looking
+	for.
+*/
+
 class OverviewContactSection extends React.Component {
 	render() {
 		return(
 			<div className="contact">
 				<h2 className="overview-section-heading">Contact</h2>
 				<div className="overview-section-content">
-					{/*<label for="name">
-						Name:
-						<input id="name" type="text" placeholder="John"></input>
-					</label>*/}
-					
-					{/*<form>
-						<label>
-							Name:
-							<input placeholder="Name"/>
-						</label>
-						<label>
-							Email:
-							<input placeholder="Email"/>
-						</label>
-						<label>
-							Message:
-							<textarea placeholder="Please type your message here"></textarea>
-						</label>
-					</form>*/}
 					<div className="contact-container">
 						<div className="contact-row">
 							<div className="contact-icon-box"><i className="fa fa-github"></i></div>
@@ -143,6 +142,12 @@ class OverviewContactSection extends React.Component {
 	}
 }
 
+/*
+	The OverviewCurrentProjectSection can keep its name. This component is the 
+	view where users can find out what I'm currently doing. There is also a link to 
+	my projects page so people can see the rest of my work.
+*/
+
 class OverviewCurrentProjectSection extends React.Component {
 	render() {
 		return(
@@ -150,18 +155,6 @@ class OverviewCurrentProjectSection extends React.Component {
 				<h2 className="overview-section-heading">Current Project: Covid Taichung Google Maps API</h2>
 				<p><a href="projects.html">(Click here to see the full list of my projects)</a></p>
 				<div className="overview-section-content project-container">
-					<div>
-						{/*<button className="link-button">
-							<a href="https://covid-taichung.github.io/cfiw/map-v3.html">
-								See live
-							</a>
-						</button>
-						<button className="link-button">
-							<a href="https://github.com/Covid-Taichung/cfiw/blob/main/map/map-marker-toggles.js">
-								View code
-							</a>
-						</button>*/}
-					</div>
 					<div>
 						<img src="current_project_googlemap.JPG" className="profile-preview"></img>
 					</div>
@@ -189,12 +182,21 @@ class OverviewCurrentProjectSection extends React.Component {
 						</p>
 						
 				</div>
-				{/*<div className="project-container">
-				</div>*/}
 			</div>
 		);
 	}
 }
+
+/*
+	The OverviewResumeSection can keep its name. This section lets users see
+	a short version of my resume. The resume is divided into 3 sections:
+	Coding Experience, Work Experience, and Education. These are also toggled by
+	a navbar. 
+
+	This navbar should also be turned into a separate component.
+	It would allow me to shorten the code. I will make the component over the weekend,
+	or early next week.
+*/
 
 class OverviewResumeSection extends React.Component {
 	constructor(props) {
@@ -203,13 +205,9 @@ class OverviewResumeSection extends React.Component {
 			selectedResumeSection: "Coding Experience",
 		});
 		this.handleChangeResumeSection = this.handleChangeResumeSection.bind(this);
-		// this.handleDisplayWorkExperience = this.handleDisplayWorkExperience.bind(this);
-		// this.handleDisplayEducation = this.handleDisplayEducation.bind(this);
 	}
 
 	handleChangeResumeSection(e) {
-		console.log(`You've selected the ${e.target.textContent} section!`)
-		console.log(e.target.textContent)
 		this.setState({
 			selectedResumeSection: e.target.textContent
 		})
@@ -219,12 +217,11 @@ class OverviewResumeSection extends React.Component {
 
 		switch(this.state.selectedResumeSection) {
 			case "Coding Experience":
-				console.log("Coding Experience")
 				return(
-
 					<div className="resume">
 						<h2 className="overview-section-heading">Resume</h2>
 						<div className="coding-experience overview-section-content">
+							{/*this is the resume nav selector, make it into a component.*/}
 							<div className="main-overview-nav">
 								<button
 									className="main-overview-nav-button-selected"
@@ -245,6 +242,7 @@ class OverviewResumeSection extends React.Component {
 									Education
 								</button>
 							</div>
+							{/*resume nav ends here*/}
 							<div className="resume-sections">
 								<div className="coding-experience">
 									<div className="experience-item">
@@ -300,7 +298,10 @@ class OverviewResumeSection extends React.Component {
 											of your net income and how much you pay in taxes. 
 										</p>
 									</div>
-
+								{/*
+									Keep the whiteboard website in case 
+									I add it back to the porfolio
+								*/}
 									{/*<div className="experience-header">
 										<h3>
 											Whiteboard Website
@@ -320,11 +321,11 @@ class OverviewResumeSection extends React.Component {
 				);
 				break;
 			case "Work Experience":
-				console.log("Work Experience")
 				return(
 					<div className="resume">
 						<h2 className="overview-section-heading">Resume</h2>
 						<div className="coding-experience overview-section-content">
+							{/*this is the resume nav selector, make it into a component.*/}
 							<div className="main-overview-nav">
 								<button
 									className="main-overview-nav-button"
@@ -345,6 +346,7 @@ class OverviewResumeSection extends React.Component {
 									Education
 								</button>
 							</div>
+							{/*resume nav ends here*/}
 							<div className="resume-sections">
 								<div className="work-experience">
 									<div className="experience-item">
@@ -418,11 +420,11 @@ class OverviewResumeSection extends React.Component {
 				);	
 				break;
 			case "Education":
-				console.log("Education")
 				return(
 					<div className="resume">
 						<h2 className="overview-section-heading">Resume</h2>
 						<div className="coding-experience overview-section-content">
+							{/*this is the resume nav selector, make it into a component.*/}
 							<div className="main-overview-nav">
 								<button
 									className="main-overview-nav-button"
@@ -443,6 +445,7 @@ class OverviewResumeSection extends React.Component {
 									Education
 								</button>
 							</div>
+							{/*resume nav ends here*/}
 							<div className="resume-sections">
 								<div className="education-experience">
 									<div className="experience-header">
@@ -472,24 +475,19 @@ class OverviewResumeSection extends React.Component {
 	}
 }
 
-// class MainIntro extends React.Component {
-// 	render() {
-// 		return(
+/*
+	MainOverviewSection can keep its name for now, but it might be better
+	named HomePageOverviewSection, it would just be more clear for anyone 
+	else viewing the code.
+*/
 
-// 		);
-// 	}
-// }
-
-class MainOverviewSection extends React.Component {
+class HomePageOverviewSection extends React.Component {
 	constructor(props){
 		super(props);
 		this.state = ({
 			selectedOverviewSection: "Contact"
 		});				
 		this.handleChangeOverviewSection = this.handleChangeOverviewSection.bind(this)
-		// this.handleDisplayCurrentProjectSection = this.handleDisplayCurrentProjectSection.bind(this)
-		// this.handleDisplayResumeSection	= this.handleDisplayResumeSection.bind(this)
-
 	}
 
 	handleChangeOverviewSection(e) {
@@ -502,15 +500,12 @@ class MainOverviewSection extends React.Component {
 	render(){
 		switch (this.state.selectedOverviewSection) {
 			case "Contact":
-				console.log('Contact')
 				return(
 					<div className="main-overview">
 					<div className="options-container">
-						<OverviewNav
+						<HomepageOverviewSectionSelector
 							selectedOverviewSection={this.state.selectedOverviewSection} 
 							onHandleChangeOverviewSection={this.handleChangeOverviewSection} 
-							// onHandleDisplayCurrentProjectSection={this.handleDisplayCurrentProjectSection}
-							// onHandleDisplayResumeSection={this.handleDisplayResumeSection}
 						/>
 						<OverviewContactSection 
 						/>
@@ -519,15 +514,12 @@ class MainOverviewSection extends React.Component {
 				);
 				break;
 			case "Current Project":
-				console.log('Current Project')
 				return(
 					<div className="main-overview">
 					<div className="options-container">
-						<OverviewNav 
+						<HomepageOverviewSectionSelector 
 							selectedOverviewSection={this.state.selectedOverviewSection} 
 							onHandleChangeOverviewSection={this.handleChangeOverviewSection} 
-							// onHandleDisplayCurrentProjectSection={this.handleDisplayCurrentProjectSection}
-							// onHandleDisplayResumeSection={this.handleDisplayResumeSection}
 						/>
 						<OverviewCurrentProjectSection 
 						/>
@@ -536,15 +528,12 @@ class MainOverviewSection extends React.Component {
 				);
 				break;
 			case "Resume":
-				console.log('Resume')
 				return(
 					<div className="main-overview">
 					<div className="options-container">
-						<OverviewNav
+						<HomepageOverviewSectionSelector
 							selectedOverviewSection={this.state.selectedOverviewSection} 
 							onHandleChangeOverviewSection={this.handleChangeOverviewSection} 
-							// onHandleDisplayCurrentProjectSection={this.handleDisplayCurrentProjectSection}
-							// onHandleDisplayResumeSection={this.handleDisplayResumeSection}
 						/>
 						<OverviewResumeSection 
 						/>
@@ -560,5 +549,5 @@ class MainOverviewSection extends React.Component {
 
 
 
-const overviewContainer = document.querySelector('#main-overview');
-ReactDOM.render(e(MainOverviewSection), overviewContainer);
+const overviewContainer = document.querySelector('#homepage-overview');
+ReactDOM.render(e(HomePageOverviewSection), overviewContainer);
