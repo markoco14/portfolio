@@ -17,14 +17,14 @@
 }
 
 body {
-	background-color: --light-blue;
+	background-color: var(--light-blue);
 }
 
 
 /* style the page header */
 header {
 	height: 75px;
-	background-color: --dark-blue;
+	background-color: var(--dark-blue);
 	box-shadow: 0px 1px 10px black;
 }
 
@@ -66,7 +66,7 @@ nav a:hover {
 
 .header-nav-selected {
 	color: white;
-	background-color: --dark-blue;
+	background-color: var(--dark-blue);
 	font-weight: bold;
 	border: none;
 	border-bottom: 2px solid white;
@@ -74,7 +74,7 @@ nav a:hover {
 
 .header-nav-not-selected {
 	color: white;
-	background-color: --dark-blue;
+	background-color: var(--dark-blue);
 	border: none;
 }
 
@@ -88,7 +88,7 @@ footer {
 }
 
 h1 {
-	color: --text-dark;
+	color: var(--text-dark);
 	font-size: 3em;
 	margin: 1em 0;
 	text-align: left;
@@ -107,7 +107,7 @@ h1 {
 
 .text-highlight {
 	/*font-size: em;*/
-	color: --dark-blue;
+	color: var(--dark-blue);
 	border-bottom: 1px solid lightgrey;
 }
 
@@ -160,12 +160,12 @@ h1 {
 
 .main-overview-nav-button-selected {
 	background-color: white;
-	color: --dark-blue;
+	color: var(--dark-blue);
 	width: 33%;
 	text-align: center;
 	border: none;
 	font-weight: bold;
-	border-bottom: 2px solid --dark-blue;
+	border-bottom: 2px solid var(--dark-blue);
 	cursor: pointer;
 }
 
@@ -183,7 +183,7 @@ h1 {
 
 .experience-position-title {
 	font-weight: bold;
-	color: --dark-blue;
+	color: var(--dark-blue);
 }
 
 .contact-container {
@@ -250,11 +250,11 @@ h1 {
 @media (hover: hover) {
 
 	.current-project-links li:hover {
-		border-color: --dark-blue;
+		border-color: var(--dark-blue);
 	}
 	.current-project-links a:hover {
 		color: white;
-		background-color: --dark-blue;
+		background-color: var(--dark-blue);
 		
 
 	}
@@ -310,8 +310,8 @@ h1 {
 }
 
 .mobile-off-links a:active {
-	background-color: --dark-blue;
-	border-color: --dark-blue;
+	background-color: var(--dark-blue);
+	border-color: var(--dark-blue);
 }
 
 .mobile-off-links a {
@@ -338,11 +338,11 @@ button:active {
 
 	.mobile-off-links a:hover {
 		color: white;
-		background-color: --dark-blue;
+		background-color: var(--dark-blue);
 	}
 
 	.mobile-off-links li:hover {
-		border-color: --dark-blue;
+		border-color: var(--dark-blue);
 	}
 
 	.project-profile button:hover {
