@@ -108,34 +108,55 @@ class OverviewContactSection extends React.Component {
 				<h2 className="overview-section-heading">Contact</h2>
 				<div className="overview-section-content">
 					<div className="contact-container">
-						<div className="contact-row">
-							<div className="contact-icon-box"><i className="fa fa-github"></i></div>
-							<p><a href="https://github.com/markoco14?tab=repositories"
+						<div className="contact-row" >
+							<a href="https://github.com/markoco14?tab=repositories"
 								target="_blank"
 							>
-								 View Github repositories
-							</a></p>
-						</div>
-						<div className="contact-row">
-							<div className="contact-icon-box"><i className="fa fa-file-alt"></i></div>
-							<p><a href="https://www.cakeresume.com/mark-o-connor"
+								<div className="contact-icon-box"><i className="fa fa-github"></i></div>
+							</a>
+							<a href="https://github.com/markoco14?tab=repositories"
 								target="_blank"
 							>
-								View online resume
-							</a></p>
+								<p>
+									 View Github
+								</p>
+							</a>
 						</div>
 						<div className="contact-row">
-							<div className="contact-icon-box"><i className="fa fa-envelope"></i></div>
-							<p><a href="mailto:mark.oconnor14@gmail.com">mark.oconnor14@gmail.com
-							</a></p>
+							<a href="https://www.cakeresume.com/mark-o-connor"
+								target="_blank"
+							>
+								<div className="contact-icon-box"><i className="fa fa-file-alt"></i></div>
+							</a>
+							<a href="https://www.cakeresume.com/mark-o-connor"
+								target="_blank"
+							>
+								<p>
+									View resume
+								</p>
+							</a>
 						</div>
 						<div className="contact-row">
-							<div className="contact-icon-box"><i className="fa fa-phone"></i></div>
-							<p><a href="tel:+886905255247">+886 (0) 905 255 247
-							</a></p>
+							<a href="mailto:mark.oconnor14@gmail.com">
+								<div className="contact-icon-box"><i className="fa fa-envelope"></i></div>
+							</a>
+							<a href="mailto:mark.oconnor14@gmail.com">
+								<p>
+									mark.oconnor14@gmail.com
+								</p>
+							</a>
 						</div>
-					</div>
-						
+						<div className="contact-row">
+							<a href="tel:+886905255247">
+								<div className="contact-icon-box"><i className="fa fa-phone"></i></div>
+							</a>
+							<a href="tel:+886905255247">
+								<p>
+									+886 (0) 905 255 247
+								</p>
+							</a>
+						</div>
+					</div>	
 				</div>
 			</div>
 		);
@@ -172,13 +193,12 @@ class OverviewCurrentProjectSection extends React.Component {
 								<li>view code</li>
 							</a>
 						</ul>
-						<p>
-							The Google Maps API gives users of covid-taichung.com
-							more control over what they see on the map. Users can
-							choose to view public covid-19 data to view daily 
-							footprints of confirmed cases, locations of disinfections,
-							and locations of health facilities in Taichung that offer
-							covid-19 testing and vaccinations. 
+						<p className="current-project-description">
+							Developed a website to give COVID-19 information to English speakers living in 
+							Taichung City, Taiwan. Created a map using the Google Maps API. Designed the 
+							interface and wrote the functions that allow users to filter search results. 
+							Users can choose between Covid footprints, city disinfection locations, and 
+							health facilities for testing and vaccinations.
 						</p>
 						
 				</div>
@@ -188,10 +208,9 @@ class OverviewCurrentProjectSection extends React.Component {
 }
 
 /*
-	The OverviewResumeSection can keep its name. This section lets users see
-	a short version of my resume. The resume is divided into 3 sections:
-	Coding Experience, Work Experience, and Education. These are also toggled by
-	a navbar. 
+	The OverviewResumeSection lets users see a short version of my resume. 
+	The resume is divided into 3 sections: Coding Experience, Work Experience, 
+	and Education. These are also toggled by a navbar. 
 
 	This navbar should also be turned into a separate component.
 	It would allow me to shorten the code. I will make the component over the weekend,
@@ -252,34 +271,57 @@ class OverviewResumeSection extends React.Component {
 											</h3>
 										</div>
 										<p className="experience-position-title">
-											ReactJS 
+											HTML, CSS, ReactJS 
 										</p>
 										<p>
 											Write 2 person dialogues for your language classes.
 											The text you write is automatically formatted into
 											a dialogue so you can focus on what counts - writing. Write fun
 											and engaging dialogues so your students can learn to
-											speak naturally in any situation you can imagine.
+											speak naturally in any situation you can imagine. <a href="https://markoco14.github.io/dialogue-writer-app"
+												target="_blank"
+												rel="noreferrer noopener"
+											> View site</a>.
 										</p>
 										
 									</div>
 									<div className="experience-item">
-										
 										<div className="experience-header">
 											<h3>
-												Covid Taichung
+												Covid Taichung FAQ and Search Engine
 											</h3>
 										</div>
 										<p className="experience-position-title">
-											Javascript, Google Maps API
+											HTML, CSS, Javascript
 										</p>
 										<p>
-											Covid-19 information website for foreigners living in Taichung,
-											Taiwan. Local and imported cases are updated daily. The FAQ contains
-											extensive information on lockdown restrictions, social distancing 
-											policies, and Taiwan's vaccination schedule. Our Google Maps API shows 
-											covid case footprints, scheduled disinfection locations, and health facility
-											locations for testing and vaccinations.
+											Developed a website to give COVID-19 information to English speakers living 
+											in Taichung City, Taiwan. Created a collapsible FAQ page that lets users 
+											read a list of questions and click to expand for more information. Made a 
+											functioning search bar that allows users to input their search questions and 
+											see a list of related results. Results are filtered and ordered with the most 
+											relevant results shown at the top of the list. <a href="https://www.covid-taichung.com/frequently-asked-questions"
+												target="_blank"
+												rel="noreferrer noopener"
+											> View site</a>.
+										</p>
+									</div>
+									<div className="experience-item">
+										<div className="experience-header">
+											<h3>
+												Covid Taichung Information Website
+											</h3>
+										</div>
+										<p className="experience-position-title">
+											Webnode CMS, Plugins, Javascript
+										</p>
+										<p>
+											Developed a website to give COVID-19 information to English speakers living 
+											in Taichung City, Taiwan.  Created pages for tracking Covid footprints, 
+											daily infection statistics, and recent government announcements. <a href="https://www.covid-taichung.com"
+												target="_blank"
+												rel="noreferrer noopener"
+											> View site</a>.
 										</p>
 									</div>
 									<div className="experience-item">
@@ -290,12 +332,15 @@ class OverviewResumeSection extends React.Component {
 											</h3>
 										</div>
 										<p className="experience-position-title">
-											Javascript, Currency Exchange API
+											HTML, CSS, Javascript, Currency Exchange API
 										</p>
 										<p>
 											Calculate your income and taxes in Taiwan.
 											Input your desired income in NTD and see the breakdown
-											of your net income and how much you pay in taxes. 
+											of your net income and how much you pay in taxes. <a href="https://markoco14.github.io/tiss"
+												target="_blank"
+												rel="noreferrer noopener"
+											>View site</a>. 
 										</p>
 									</div>
 								{/*

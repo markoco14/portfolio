@@ -230,14 +230,18 @@ h1 {
 
 /* style the current project section */
 
+.current-project-description {
+	/*padding-top: 1em;*/
+}
+
 .current-project-links {
 	display: flex;
 	justify-content: space-around;
 	align-items: top;
 	/*margin-top: 2em;*/
-	padding-top: 1em;
+	padding: 1em 0;
 	/*padding-right: 2em;*/
-	margin-bottom: 0.5em;
+	/*margin-bottom: 1em;*/
 }
 
 .current-project-links li {
