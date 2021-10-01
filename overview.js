@@ -186,7 +186,7 @@ class OverviewCurrentProjectSection extends React.Component {
 							>
 								<li>view site</li>
 							</a>
-							<a href="https://github.com/Covid-Taichung/cfiw/blob/main/map/map-marker-toggles.js"
+							<a href="https://github.com/markoco14/covid-taichung-map-repo"
 								target="_blank" 
 								rel="noreferrer noopener"
 							>
