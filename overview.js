@@ -274,11 +274,12 @@ class OverviewResumeSection extends React.Component {
 											HTML, CSS, ReactJS 
 										</p>
 										<p>
-											Write 2 person dialogues for your language classes.
-											The text you write is automatically formatted into
-											a dialogue so you can focus on what counts - writing. Write fun
-											and engaging dialogues so your students can learn to
-											speak naturally in any situation you can imagine. <a href="https://markoco14.github.io/dialogue-writer-app"
+											Developed a web application for English teachers who want to 
+											create practice materials for their students. Created an interface 
+											which automatically formats the user's text into a 2 person dialogue. 
+											Wrote functions that allow users to save dialogues to local storage, 
+											delete dialogues from local store, and edit dialogues to work on 
+											them anytime. <a href="https://markoco14.github.io/dialogue-writer-app"
 												target="_blank"
 												rel="noreferrer noopener"
 											> View site</a>.
@@ -335,9 +336,11 @@ class OverviewResumeSection extends React.Component {
 											HTML, CSS, Javascript, Currency Exchange API
 										</p>
 										<p>
-											Calculate your income and taxes in Taiwan.
-											Input your desired income in NTD and see the breakdown
-											of your net income and how much you pay in taxes. <a href="https://markoco14.github.io/tiss"
+											Created a website that calculates income and taxes for foreigners
+											living in Taiwan. In step 1, users can input a desired income level 
+											and automatically see the breakdown of taxes and net income. In 
+											step 2, users can convert their salary into 6 foreign currencies 
+											to see how much their salary is worth back home. <a href="https://markoco14.github.io/tiss"
 												target="_blank"
 												rel="noreferrer noopener"
 											>View site</a>. 
