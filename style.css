@@ -478,7 +478,7 @@ img {
 		flex-wrap: wrap;
 		justify-content: right;
 		border-radius: 25px;
-		transform: translateX(-40%);
+		transform: translateX(-55%);
 		transition: 0.5s ease-out;
 	}
 
@@ -610,8 +610,8 @@ img {
 		flex-wrap: wrap;
 		justify-content: right;
 		border-radius: 25px;
-		transform: translateX(-50%);
-		transition: 0.5s ease-out;
+		transform: translateX(-65%);
+		transition: 0.8s ease-out;
 	}
 
 	.right {
@@ -625,7 +625,7 @@ img {
 
 	.left:hover {
 		transform: translateX(-30%);
-		transition: 1s ease-out;
+		transition: 1.2s ease-out;
 	}
 
 	.right:hover {
