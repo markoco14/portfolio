@@ -376,6 +376,9 @@ class OverviewResumeSection extends React.Component {
 				return(
 					<div className="resume">
 						<h2 className="overview-section-heading">Resume</h2>
+						<p><a href="https://www.cakeresume.com/mark-o-connor"
+						target="_blank"
+						rel="noreferrer noopener">(Click here to see online resume)</a></p>
 						<div className="coding-experience overview-section-content">
 							{/*this is the resume nav selector, make it into a component.*/}
 							<div className="main-overview-nav">
@@ -475,6 +478,9 @@ class OverviewResumeSection extends React.Component {
 				return(
 					<div className="resume">
 						<h2 className="overview-section-heading">Resume</h2>
+						<p><a href="https://www.cakeresume.com/mark-o-connor"
+						target="_blank"
+						rel="noreferrer noopener">(Click here to see online resume)</a></p>
 						<div className="coding-experience overview-section-content">
 							{/*this is the resume nav selector, make it into a component.*/}
 							<div className="main-overview-nav">
