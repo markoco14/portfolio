@@ -176,9 +176,19 @@ class OverviewCurrentProjectSection extends React.Component {
 				<h2 className="overview-section-heading">Current Project: Covid Taichung Google Maps API</h2>
 				<p><a href="projects.html">(Click here to see the full list of my projects)</a></p>
 				<div className="overview-section-content project-container">
-					<div>
-						<img src="img/current_project_googlemap.JPG" className="profile-preview"></img>
-					</div>
+					<div className="current-project-flex">
+						<div className="current-project-preview-container">
+							<img src="img/current_project_googlemap.JPG" className="profile-preview"></img>
+						</div>
+						<div className="current-project-description-container">
+						<p className="current-project-description">
+							Developed a website to give COVID-19 information to English speakers living in 
+							Taichung City, Taiwan. Created a map using the Google Maps API. Designed the 
+							interface and wrote the functions that allow users to filter search results. 
+							Users can choose between Covid footprints, city disinfection locations, and 
+							health facilities for testing and vaccinations.
+						</p>
+					
 						<ul className="current-project-links">
 							<a href="https://covid-taichung.github.io/cfiw/map-v3.html" 
 								target="_blank" 
@@ -193,13 +203,8 @@ class OverviewCurrentProjectSection extends React.Component {
 								<li>view code</li>
 							</a>
 						</ul>
-						<p className="current-project-description">
-							Developed a website to give COVID-19 information to English speakers living in 
-							Taichung City, Taiwan. Created a map using the Google Maps API. Designed the 
-							interface and wrote the functions that allow users to filter search results. 
-							Users can choose between Covid footprints, city disinfection locations, and 
-							health facilities for testing and vaccinations.
-						</p>
+						</div>
+					</div>
 						
 				</div>
 			</div>
@@ -560,42 +565,42 @@ class HomePageOverviewSection extends React.Component {
 			case "Contact":
 				return(
 					<div className="main-overview">
-					<div className="options-container">
-						<HomepageOverviewSectionSelector
-							selectedOverviewSection={this.state.selectedOverviewSection} 
-							onHandleChangeOverviewSection={this.handleChangeOverviewSection} 
-						/>
-						<OverviewContactSection 
-						/>
-					</div>
+						<div className="options-container">
+							<HomepageOverviewSectionSelector
+								selectedOverviewSection={this.state.selectedOverviewSection} 
+								onHandleChangeOverviewSection={this.handleChangeOverviewSection} 
+							/>
+							<OverviewContactSection 
+							/>
+						</div>
 					</div>
 				);
 				break;
 			case "Current Project":
 				return(
 					<div className="main-overview">
-					<div className="options-container">
-						<HomepageOverviewSectionSelector 
-							selectedOverviewSection={this.state.selectedOverviewSection} 
-							onHandleChangeOverviewSection={this.handleChangeOverviewSection} 
-						/>
-						<OverviewCurrentProjectSection 
-						/>
-					</div>
+						<div className="options-container">
+							<HomepageOverviewSectionSelector 
+								selectedOverviewSection={this.state.selectedOverviewSection} 
+								onHandleChangeOverviewSection={this.handleChangeOverviewSection} 
+							/>
+							<OverviewCurrentProjectSection 
+							/>
+						</div>
 					</div>
 				);
 				break;
 			case "Resume":
 				return(
 					<div className="main-overview">
-					<div className="options-container">
-						<HomepageOverviewSectionSelector
-							selectedOverviewSection={this.state.selectedOverviewSection} 
-							onHandleChangeOverviewSection={this.handleChangeOverviewSection} 
-						/>
-						<OverviewResumeSection 
-						/>
-					</div>
+						<div className="options-container">
+							<HomepageOverviewSectionSelector
+								selectedOverviewSection={this.state.selectedOverviewSection} 
+								onHandleChangeOverviewSection={this.handleChangeOverviewSection} 
+							/>
+							<OverviewResumeSection 
+							/>
+						</div>
 					</div>
 				);
 				break;
