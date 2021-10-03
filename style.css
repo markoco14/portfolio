@@ -135,7 +135,7 @@ h1 {
 .text-highlight {
 	/*font-size: em;*/
 	color: var(--dark-blue);
-	border-bottom: 1px solid lightgrey;
+	/*border-bottom: 1px solid lightgrey;*/
 }
 
 .intro h1 {
