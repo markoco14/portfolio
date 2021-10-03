@@ -16,6 +16,10 @@
 	font-family: 'Noto Sans', sans-serif;
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 body {
 	background-color: var(--light-blue);
 }
