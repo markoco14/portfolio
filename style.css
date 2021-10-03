@@ -32,7 +32,9 @@ header {
 	box-shadow: 0px 1px 10px black;
 	display: flex;
 	justify-content: right;
-}
+/*	position: fixed;
+	width: 100%;
+*/}
 
 
 nav {
@@ -90,6 +92,11 @@ nav a:hover {
 	font-weight: bold;
 }
 
+section {
+	min-height: 400px;
+}
+
+
 
 footer {
 	position: relative;
@@ -104,13 +111,25 @@ h1 {
 
 /* style each page intro section */
 
+.large-intro {
+	display: none;
+}
+
+.large-intro p {
+	margin-top: 1em;
+	font-size: 1.5em;
+}
+
 .intro {
 	color: black;
-	margin: 0 1em 0;
+	margin: 75px 1em 0;
 	padding: 1em;
 	border-radius: 10px;
 	height: 100%;
 	border-bottow: 1px solid lightgrey;
+	/*display: flex;*/
+/*	flex-direction: column;
+*/
 }
 
 .text-highlight {
@@ -125,12 +144,57 @@ h1 {
 	/*border-bottom: 1px solid lightgrey;*/
 }
 
+.intro img {
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	object-fit: cover;
+	object-position: 50% 40%;
+	/*transform: scale(70%);*/
+}
+
+.mobile-intro p {
+	margin-top: 1em;
+	font-size: 1.5em;
+}
+.mobile-intro-main {
+	display: flex;
+	align-items: center;
+}
+
+.mobile-intro-left {
+	display: flex;
+	align-items: center;
+	justify-content: left;
+	ovreflow: hidden;
+	width: 60%;
+}
+
+.mobile-intro-left h1 {
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+.mobile-intro-right {
+	display: flex;
+	width: 30%;
+	margin-left: 1em;
+}
+
+
+.mobile-intro-right img {
+}
+
+
+
 /* style the home page main body */
 
 .main-overview {
 	width: 100%;
 	background-color: white;
 	padding: 1em;
+	min-height: 500px;
 }
 
 .overview-section-heading {
@@ -396,20 +460,92 @@ img {
 	border-radius: 5px;
 }	
 
-/*@media (min-width: 550px) {
-	.project-profile {
-		width: 90%;
-		margin: 0 auto 4em;
+/* breakpoint at 500px */
+
+@media (min-width: 550px) {
+	.mobile-intro {
+		display: none;
 	}
+
+	.large-intro {
+		display: flex;
+		align-items: center;
+		justify-content: space-evenly;
+	}
+
+	.large-intro h1 {
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+	}
+
+	.large-intro h2 {
+		width: 80%;
+	}
+
+	.large-intro-left {
+		display: flex;
+		flex-direction: column;
+		/*width: 70%;*/
+	}
+
+	.large-intro-left p {
+		overflow: hidden;
+	}
+
+	.large-intro-right {
+		width: 50%;
+		display: flex;
+		justify-content: center;
+	}
+
+	.large-intro-right img {
+		width: 150px;
+		height: 150px;
+		/*margin-right: 1em;*/
+	}
+
+	
 }
-*/
+
+/* breakpoint at 700px */
 
 @media (min-width: 700px) {
+	
 
-	.intro h1 {
-		position: relative;
-		margin: auto;
-		width: 90%;
+	/* style large screen intro */
+	
+	.large-intro {
+		display: flex;
+		align-items: center;
+		justify-content: space-evenly;
+	}
+
+	.large-intro h1 {
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+	}
+
+	.large-intro h2 {
+		width: 80%;
+	}
+
+	.large-intro-left {
+		display: flex;
+		flex-direction: column;
+		/*width: 70%;*/
+	}
+
+	.large-intro-right {
+		width: 50%;
+		display: flex;
+		justify-content: center;
+	}
+
+	.large-intro-right img {
+		width: 200px;
+		height: 200px;
 	}
 
 	.options-container {
@@ -540,9 +676,49 @@ img {
 
 }
 
+/* breakpoint at 1000px */
+
 @media (min-width: 1000px) {
 
+
+
 	/* home page styles */
+
+	/* style large screen intro */
+	
+	.large-intro {
+		display: flex;
+		align-items: center;
+		justify-content: space-evenly;
+	}
+
+	.large-intro h1 {
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+	}
+
+	.large-intro h2 {
+		width: 80%;
+	}
+
+	.large-intro-left {
+		display: flex;
+		flex-direction: column;
+		/*width: 70%;*/
+	}
+
+	.large-intro-right {
+		width: 30%;
+		display: flex;
+		justify-content: center;
+	}
+
+	.large-intro-right img {
+		width: 200px;
+		height: 200px;
+		margin-right: 1em;
+	}
 
 	.current-project-flex {
 		display: flex;
