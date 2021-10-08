@@ -123,7 +123,7 @@ h1 {
 .intro {
 	color: black;
 	margin: 75px 1em 0;
-	padding: 1em;
+	/*padding: 1em;*/
 	border-radius: 10px;
 	height: 100%;
 	border-bottow: 1px solid lightgrey;
@@ -178,12 +178,20 @@ h1 {
 
 .mobile-intro-right {
 	display: flex;
-	width: 30%;
+	/*width: 30%;*/
 	margin-left: 1em;
 }
 
+@media (max-width: 400px) {
+	.intro img {
+		width: 126px;
+		height: 126px;
+		margin-left: 0;
+	}
 
-.mobile-intro-right img {
+	.mobile-intro-right {
+		margin-left: 0;
+	}
 }
 
 
@@ -193,7 +201,7 @@ h1 {
 .main-overview {
 	width: 100%;
 	background-color: white;
-	padding: 1em;
+	padding: 1em 0;
 	min-height: 500px;
 }
 
